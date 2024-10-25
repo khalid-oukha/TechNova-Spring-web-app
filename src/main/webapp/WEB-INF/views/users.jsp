@@ -11,7 +11,7 @@
     <h2>User Management System</h2>
 
     <div class="mb-3">
-        <a href="/users/new" class="btn btn-primary">Add New User</a>
+        <a href="<%= request.getContextPath() %>/users/new" class="btn btn-primary">Create User</a>
     </div>
 
     <table class="table table-bordered">
@@ -40,8 +40,8 @@
             <td><%= user.getRegistrationDate() %></td>
             <td><%= user.getExpirationDate() %></td>
             <td>
-                <a href="/users/edit?id=<%= user.getId() %>" class="btn btn-warning">Edit</a>
-                <a href="/users/delete?id=<%= user.getId() %>" class="btn btn-danger">Delete</a>
+                <a href="<%= request.getContextPath() %>/users/edit/<%= user.getId() %>" class="btn btn-warning">Edit</a>
+                <a href="<%= request.getContextPath() %>/users/delete/<%= user.getId() %>" class="btn btn-danger">Delete</a>
             </td>
         </tr>
         <% } %>
