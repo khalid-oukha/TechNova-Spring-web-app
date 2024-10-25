@@ -105,4 +105,4 @@ public class PaymentService {
 ````
 
 ## What is Spring Data?
-[Click here !](TechNova-Spring-app/springData.md)
+[Click here !](springData.md)
