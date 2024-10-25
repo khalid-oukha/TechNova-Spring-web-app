@@ -52,4 +52,5 @@
     <bean id="userController" class="org.example.controllers.UserController">
         <constructor-arg name="userService" ref="userService"/>
     </bean>
+
 </beans>
